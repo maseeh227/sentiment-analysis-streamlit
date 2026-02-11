@@ -2,12 +2,9 @@
 import streamlit as st
 import pickle
 import re
-import nltk
 from nltk.corpus import stopwords
-
-nltk.data.path.append(
-    r"C:\Users\MOHAMMED MASEEH\AppData\Roaming\nltk_data"
-)
+import nltk
+nltk.download('stopwords')
 
 # Load model and vectorizer
 model = pickle.load(open("model.pkl", "rb"))
